@@ -1,0 +1,21 @@
+meta {
+  name: Post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/foreach/api/cours
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "dateDebut": "2024-15-01",
+      "dateFin": "2025-05-30",
+      "ue": {"id": 2},
+      "formateur": {"id": 2},
+      "etudiants": [{"id": 1}, {"id": 2}]
+  }
+}

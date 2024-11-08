@@ -1,0 +1,20 @@
+meta {
+  name: Post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/foreach/api/etudiants
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "nom": "Test",
+      "prenom": "Test",
+      "email": "thomas.dindin2@gmail.com",
+      "telephone": "0610944095"
+   }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/foreach/api/absences
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "dateDebut": 315529200000,
+      "dateFin": 315874800000,
+      "type": "Injustifiée",
+      "etudiants": {"id" :2}
+  }
+}
